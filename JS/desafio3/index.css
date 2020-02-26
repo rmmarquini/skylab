@@ -1,0 +1,118 @@
+/* ----- NORMALIZER ----- */
+@import url('https://necolas.github.io/normalize.css/latest/normalize.css');
+/* ----- FONT IMPORT NUNITO ----- */
+@import url('https://fonts.googleapis.com/css?family=Exo+2');
+
+/* ----- MAIN CSS ----- */
+body, html {background: #333 !important;}
+
+html {
+     -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+    overflow-x: hidden !important;
+    /* sticky footer */
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    /* margin bottom relacionada ao sticky footer */
+    margin-bottom: 10px;
+    font-family: "Exo 2", Calibri, Arial, sans-serif;
+    font-weight: 300;
+    line-height: 1.625;
+    color: #FFF;
+
+    /* scrollbar for IE11 */
+    scrollbar-face-color: #333;
+    -ms-scrollbar-face-color: #333;
+    scrollbar-track-color: #FFF;
+    -ms-scrollbar-track-color: #FFF;
+}
+
+header {
+    text-align: center;
+}
+
+main {
+    flex: 1;
+    margin: 0 auto;
+    z-index: 1;
+    width: 80%;
+}
+
+.divider {
+    border: 1px solid #373737;
+    margin: 1rem 0;
+    width: 80%;
+}
+
+.btn {cursor: pointer;}
+
+footer {
+    /* defina as propriedades do sticky footer */
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    /* defina a altura fixa do footer aqui */
+    height: 10px;
+    padding: 0.5rem 0 2rem;
+    /* geralmente uma img de 64x64 px para não comprometer o carregamento do site em mobile */
+    background: #252525;
+    color: #FFF;
+    text-align: center;
+    border-top: 1px solid rgba(0, 0, 0, 0.18);
+    -webkit-box-shadow: 0px -2px 12px rgba(0, 0, 0, 0.18), 0px -8px 16px rgba(0, 0, 0, 0.10);
+    -moz-box-shadow: 0px -2px 12px rgba(0, 0, 0, 0.18), 0px -8px 16px rgba(0, 0, 0, 0.10);
+    box-shadow: 0px -2px 12px rgba(0, 0, 0, 0.18), 0px -8px 16px rgba(0, 0, 0, 0.10);
+}
+
+/* ----- HEADERS ----- */
+h1, h2, h3, h4, h5, h6 {font-family: 'Exo 2', Calibri, Arial, sans-serif;}
+
+/* ------ WEBKIT SCROLLBAR STYLE ----- */
+::-webkit-scrollbar {width: 5px;}
+::-webkit-scrollbar-track {background-color: #FFF;}
+::-webkit-scrollbar-thumb {background-color: #333;}
+::-webkit-scrollbar-thumb:hover {background-color: #666;}
+
+
+/* ----- COMMONS ----- */
+a, a.visited,
+.navbar-inverse .navbar-nav .nav-link {
+    color: #00af5d;
+    -webkit-transition: color ease .4s;
+    -moz-transition: color ease .4s;
+    -ms-transition: color ease .4s;
+    -o-transition: color ease .4s;
+    transition: color ease .4s;
+}
+
+a:hover, a:active, a:focus,
+.navbar-inverse .navbar-nav .nav-link:focus,
+.navbar-inverse .navbar-nav .nav-link:hover {
+    text-decoration: none;
+    color: rgba(0, 255, 138, .75);
+}
+
+button[type=button]:focus, input[type=password]:focus, input[type=text]:focus {outline: 0 !important;}
+
+pre {
+    background: #E4E4E4;
+    padding: 1rem;
+}
+
+table {
+    border-collapse: collapse !important;
+}
+
+table thead tr th,
+table tbody tr td { 
+    border: 1px solid #fff;
+    padding: 0.2rem 0.5rem;
+    font-weight: normal;
+}
+
+.repoInfo {
+    margin: 2rem auto;
+}

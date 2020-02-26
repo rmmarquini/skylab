@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Skylab - JS - Desafio 3</title>
+        <link rel="stylesheet" type="text/css" href="index.css" />
+    </head>
+    <body>
+        <header>
+            <h1>Working with Promises</h1>
+        </header>
+        <main>
+            <h3>Checa maioridade:</h3>
+            <div class="inputIdade">
+                <input type="text" name="idade" id="idade" placeholder="Insira a idade">
+                <button class="btn">Verifica maioridade</button>
+                <br />
+                <img name="loadingImage" id="loadingImg" src="spin-bw.gif"  width="32px" height="32px" />
+            </div>
+            <div class="retornaMaioridade"></div>
+            <div class="divider"></div>
+
+            <h3>Retorna repositório Github do usuário</h3>
+            <div class="getUsrGithub">
+                <input type="text" name="user" id="user" placeholder="Informe um usuário Github">
+                <button class="btn">Buscar repositório</button>
+                <br />
+                <img name="loadingImage" id="loadingImg1" src="spin-bw.gif"  width="32px" height="32px" />
+            </div>
+            <div class="repoInfo">
+                <table class="repoInfoList">
+                    <thead>
+                        <tr>
+                            <th>Repositório</th>
+                            <th>Proprietário</th>
+                            <th>Descrição</th>
+                            <th>Url</th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+            </div>
+            <div class="divider"></div>
+        </main>
+        <footer>
+            <small>Rocketseat - Skylab - JS - Manipulando a DOM</small>
+        </footer>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script type="text/javascript" src="index.js"></script>
+    </body>
+</html>
