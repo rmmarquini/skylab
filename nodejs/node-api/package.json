@@ -1,0 +1,30 @@
+{
+  "name": "node_api",
+  "version": "1.0.0",
+  "description": "API construĩda durante o curso de Nodejs da Skylab - Rocketseat",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon ./server.js localhost 3001"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rmmarquini/skylab.git"
+  },
+  "author": "Rafael Mardegan",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/rmmarquini/skylab/issues"
+  },
+  "homepage": "https://github.com/rmmarquini/skylab#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "mongoose": "^5.9.3",
+    "mongoose-paginate": "^5.0.3",
+    "require-dir": "^1.2.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.2"
+  }
+}
